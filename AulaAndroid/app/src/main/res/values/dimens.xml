@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size">150dp</dimen>
+    <dimen name="botao_larg">100dp</dimen>
+</resources>

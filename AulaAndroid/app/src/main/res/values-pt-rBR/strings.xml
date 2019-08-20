@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AulaAndroid</string>
+    <string name="action_settings">Configuracoes</string>
+    <string name="text1_label">Ola Mundo</string>
+    <string name="botaoo">botao</string>
+    <string name="Hello_baby">ola</string>
+</resources>

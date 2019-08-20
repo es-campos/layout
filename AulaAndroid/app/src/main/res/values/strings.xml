@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">AulaAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="text1_label">Hello World</string>
+    <string name="botaoo">button</string>
+    <string name="Hello_baby">ola</string>
+</resources>
