@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application login</string>
+    <string name="bt2_on">show</string>
+    <string name="bt2_off">ride</string>
+</resources>

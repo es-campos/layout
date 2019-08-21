@@ -12,9 +12,12 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button botao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +30,20 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "What you wish?", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
         Log.d("Main_Activity", "on_create");
 
-        Toast.makeText(this, "chupa mundo", Toast.LENGTH_SHORT).show();
+        botao = findViewById(R.id.button);
+        botao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "You are very dog", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     @Override
