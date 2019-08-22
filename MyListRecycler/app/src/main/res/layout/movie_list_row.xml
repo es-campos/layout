@@ -4,38 +4,42 @@
     android:layout_height="match_parent">
 
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="-47dp"
-            android:layout_marginRight="-47dp"
-            android:layout_toStartOf="@+id/year"
-            android:layout_toLeftOf="@+id/year"
-            android:text="Filme"
-            android:textColor="@color/corPreta"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="-45dp"
+        android:layout_marginRight="-45dp"
+        android:layout_marginBottom="669dp"
+        android:text="Filme"
+        android:textColor="@color/corPreta"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="82dp"
+        android:layout_height="57dp"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="-3dp"
+        android:text="Ano"
+        android:textColor="@color/corPreta" />
 
     <TextView
         android:id="@+id/genre"
-        android:layout_width="match_parent"
+        android:layout_width="364dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="680dp"
-        android:text="Gênero" />
-
-        <TextView
-            android:id="@+id/year"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="15dp"
-            android:text="Ano"
-            android:textColor="@color/corPreta" />
-
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="411dp"
+        android:layout_marginTop="673dp"
+        android:text="Gênero"
+        android:textColor="@color/corPreta" />
 
 
 </RelativeLayout>
