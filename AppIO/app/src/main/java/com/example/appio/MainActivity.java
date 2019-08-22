@@ -1,6 +1,7 @@
 package com.example.appio;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,9 +31,15 @@ public class MainActivity extends AppCompatActivity {
                 String editoraString = editora.getText().toString();
                 String resultado;
 
-                resultado = crud.insereDado(tituloString,autorString,editoraString);
+                //SQLite
+                //resultado = crud.insereDado(tituloString,autorString,editoraString);
 
-                Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
+                RoomDAO dao = Room.databaseBuilder(getApplicationContext(), CarroDataBase.class, "carro.db")
+                        .build()
+                        .getRoomDAO();
+                dao.salvar(tituloString, editoraString, autorString);
+
+                //Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 
                 Intent i = new Intent(MainActivity.this, Consulta.class);
                 startActivity(i);

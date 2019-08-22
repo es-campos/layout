@@ -14,7 +14,7 @@ public class BancoController {
     public BancoController(Context context){
         banco = new CriaBanco(context);
     }
-
+/*
     public String insereDado(String titulo, String autor, String editora){
         ContentValues valores;
         long resultado;
@@ -32,7 +32,7 @@ public class BancoController {
             return "Erro ao inserir registro";
         else
             return "Registro Inserido com sucesso";
-
+*/
     }
 
     public Cursor carregaDados(){
