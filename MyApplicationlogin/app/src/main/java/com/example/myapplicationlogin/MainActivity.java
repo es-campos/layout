@@ -2,13 +2,12 @@ package com.example.myapplicationlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,46 +16,39 @@ public class MainActivity extends AppCompatActivity {
     private EditText login;
     private EditText pass;
     private SharedPreferences pref;
-    private final String LOG_IN_STATUS="Login status";
+    private final String LOG_IN_STATUS = "Login status";
+    private ListView listView;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        pref= this.getPreferences(Context.MODE_PRIVATE);
-        if (getValue(LOG_IN_STATUS)){
-            Intent intent = new Intent(this, DActivity.class);
-            startActivity(intent);
-        } else {
+    private boolean getValuee(String log_in_status) {
 
-        }
-
-        setListener();
-
-
+        return true;
     }
 
-    void setListener(){
-        start= (Button) findViewById(R.id.start);
-        login= (EditText) findViewById(R.id.login);
-        pass= (EditText) findViewById(R.id.pass);
+    void setListener() {
+        start = (Button) findViewById(R.id.start);
+        login = (EditText) findViewById(R.id.login);
+        pass = (EditText) findViewById(R.id.pass);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View view){
+            public void onClick(View view) {
                 String user = login.getText().toString();
                 String prot = pass.getText().toString();
-                if (user!= null && pass!=null){
-                    if (user.equals("Emerson") && pass.equals("321")){
-                        Intent i = new Intent(MainActivity.this, DActivity.class);
-                        i.putExtra("Emerson", login);
+                if (user != null && pass != null) {
+                    if (user.equals("Emerson") && prot.equals("321")) {
+                        Intent i = new Intent(MainActivity.this, BancActivity.class);
+                        i.putExtra("Emerson", user);
                         setValue(true);
                         startActivity(i);
                         finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
-            /*public void onClick(View view) {
+        });
+
+        /*public void onClick(View view) {
                 String user = login.getText().toString();
                 String prot = pass.getText().toString();
                 if (user!= null){
@@ -69,17 +61,28 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });*/
+
     }
-    void saveValue(boolean status){
+
+
+    void saveValue ( boolean status){
         SharedPreferences.Editor editor = pref.edit();
         editor.putBoolean(LOG_IN_STATUS, status);
         editor.commit();
 
     }
-    boolean getValue(String key){
+
+    boolean getValue (String key){
         boolean defaultValue = false;
         boolean value = pref.getBoolean(key, defaultValue);
-        return value;
+
+        return true;
+
+    }
+
+    private void setValue(boolean b) {
 
     }
 }
+
+
