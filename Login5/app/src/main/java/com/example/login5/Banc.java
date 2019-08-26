@@ -1,13 +1,13 @@
-package com.example.login5.Banc;
+package com.example.login5;
 
 public class Banc {
+
     private String name, type;
 
-    public (){
+    public Banc(String name, String type) {
+        this.name = name;
+        this.type = type;
     }
-    public Banc (String name, String type);
-    this name= name;
-    this type= type;
 
     public String getName() {
         return name;
