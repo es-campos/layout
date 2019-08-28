@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 if (user != null && pass != null){
                     if (user.equals("Mandragora") && pass.equals("love")){
                         Intent i = new Intent(MainActivity.this, LoginB.class);
-                        i.putExtra("Mandragora",user);
+                        i.putExtra("Mandragora", user);
                         startActivity(i);
                         finish();
                     } else {
