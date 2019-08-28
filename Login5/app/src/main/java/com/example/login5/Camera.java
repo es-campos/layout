@@ -14,18 +14,18 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-public class CameraAPI extends AppCompatActivity {
+public class Camera extends AppCompatActivity {
     ImageView imageViewFoto;
     private Button button;
 
-    public CameraAPI(Button button) {
+    public Camera(Button button) {
         this.button = button;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.camera);
 
        if(ActivityCompat.checkSelfPermission(
                this, Manifest.permission.CAMERA) !=PackageManager. PERMISSION_GRANTED){

@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
     private EditText login, password;
     private Button but;
 
@@ -23,25 +23,23 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         but = findViewById(R.id.but);
 
-        but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String user = login.getText().toString();
-                String pass = password.getText().toString();
-                if (user != null && pass != null){
-                    if (user.equals("Mandragora") && pass.equals("love")){
-                        Intent i = new Intent(MainActivity.this, LoginB.class);
-                        i.putExtra("Mandragora", user);
-                        startActivity(i);
-                        finish();
-                    } else {
-                        Toast.makeText(
-                                getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
-                    }
-                }
-
-            }
-        });
     }
 
+    @Override
+    public void onClick(View view) {
+        String user = login.getText().toString();
+        String pass = password.getText().toString();
+        if (user != null && pass != null){
+            if (user.equals("Mandragora") && pass.equals("love")){
+                Intent i = new Intent(MainActivity.this, LoginB.class);
+                i.putExtra("Mandragora", user);
+                startActivity(i);
+                finish();
+            } else {
+                Toast.makeText(
+                        getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
 }
+
