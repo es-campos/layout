@@ -1,9 +1,12 @@
-package com.example.primeiroprojeto;
+package com.example.meuprojeto;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,9 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void  alterarTexto (View view){
+    public void sortearNumero (View view){
 
-        TextView texto = findViewById(R.id.textoExibicao);
-        texto.setText("Texto alterado");
+        TextView selecionador = findViewById(R.id.selecionador);
+
+
+         //número randômico
+        int x = new Random().nextInt(11);
+        selecionador.setText("O número selecionado é: " + x);
     }
 }
