@@ -10,13 +10,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f244cc10-3c10-496f-bfc8-ef8c3f1152e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ListView/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ListView/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Mymap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/androidTest/java/com/example/mapswithmenu/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/java/com/example/mapswithmenu/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/layout/main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/app/src/test/java/com/example/mapswithmenu/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapsWithMenu/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../layout" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +68,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/Mymap.iml">
           <provider selected="true" editor-type-id="text-editor" />
@@ -71,7 +106,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -182,6 +217,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3290938" />
