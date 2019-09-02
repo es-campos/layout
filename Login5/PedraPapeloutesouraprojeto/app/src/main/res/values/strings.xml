@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pedra, Papel ou tesoura projeto</string>
+    <string name="escolha_uma_op_o_abaixo">Escolha uma opção abaixo</string>
+    <string name="escolha_do_app">Escolha do app</string>
+    <string-array name="jokempo">
+        <item name="pedra">Pedra</item>
+        <item name="papel">Papel</item>
+        <item name="tesoura">Tesoura</item>
+    </string-array>
+</resources>
