@@ -31,7 +31,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     @Override //visualização dos itens
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        Filmes filmes = listaFilmes.get( position );
+        Filmes filmes = listaFilmes.get(position);
         holder.title.setText(filmes.getTitleFilme());
         holder.year.setText(filmes.getYear());
         holder.genero.setText(filmes.getGenero());
@@ -52,9 +52,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            title = itemView.findViewById(R.id.textTitle);
-            year = itemView.findViewById(R.id.textYear);
-            genero = itemView.findViewById(R.id.textGenero);
+            title = itemView.findViewById(R.id.titleFilme);
+            year = itemView.findViewById(R.id.year);
+            genero = itemView.findViewById(R.id.genero);
         }
     }
 }

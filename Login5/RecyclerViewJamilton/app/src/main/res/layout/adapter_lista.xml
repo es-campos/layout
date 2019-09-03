@@ -11,28 +11,28 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textTitle"
+            android:id="@+id/titleFilme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:text="title"
+            android:text="@string/title"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textYear"
+            android:id="@+id/year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="year"
+            android:text="@string/year"
             android:textSize="18sp" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textGenero"
+        android:id="@+id/genero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="genero"
+        android:text="@string/genero"
         android:textSize="14sp" />
 </LinearLayout>
