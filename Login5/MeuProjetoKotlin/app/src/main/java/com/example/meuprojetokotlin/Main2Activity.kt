@@ -2,6 +2,7 @@ package com.example.meuprojetokotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.room.Room
 import kotlinx.android.synthetic.main.activity_main2.*
 
 class Main2Activity : AppCompatActivity() {
@@ -10,12 +11,21 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        val listaDeLivros = listOf<Livros>(
-            Livros("Harry Potter", "Aventura"),
-        Livros("O Senhor dos Anéis", "Aventura"),
-        Livros("Cinquenta Tons de Cinza", "Sadomasoquismo"))
+//        val listaDeLivros = listOf<Livros>(
+//            Livros("Harry Potter", "Aventura"),
+//        Livros("O Senhor dos Anéis", "Aventura"),
+//        Livros("Cinquenta Tons de Cinza", "Sadomasoquismo"))
 
-        listView.setAdapter(ListaAdapter(listaDeLivros, this))
+        val dao = Room.databaseBuilder(applicationContext, DataBaseLivro :: class.java, "meudb")
+            .allowMainThreadQueries()
+            .build()
+            .getDao()
+
+        dao.inserir(Livros(0, "Emerson", "Cachorro"))
+
+        val buscaTodos = dao.buscaTodos()
+
+        listView.setAdapter(ListaAdapter(buscaTodos, this))
 
     }
 }
