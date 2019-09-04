@@ -8,25 +8,25 @@ import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.item_listview.view.*
 import java.math.MathContext
 
-class ListaAdapter (val lista : List<Carro>,
+class ListaAdapter (val lista : List<Livros>,
                     val context: Context): BaseAdapter() {
 
-    private val  listaCarro = lista
+    private val  listaLivros = lista
     private val contexto = context
 
     override fun getView(position: Int, p1: View?, p2: ViewGroup?): View {
         val inflate = LayoutInflater.from(contexto).inflate(R.layout.item_listview, p2, false)
 
-        val carro = lista[position]
+        val livros = lista[position]
 
-        inflate.txtTexto.setText(carro.nome)
-        inflate.txtModelo.setText(carro.modelo)
+        inflate.txtTexto.setText(livros.nome)
+        inflate.txtModelo.setText(livros.genero)
 
         return inflate
     }
 
 
-    override fun getItem(position: Int): Carro {
+    override fun getItem(position: Int): Livros {
         return lista[position]
     }
 

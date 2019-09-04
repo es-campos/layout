@@ -10,11 +10,12 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        val listaDeCarro = listOf<Carro>(Carro("Volks", "Gol"),
-        Carro("Fiat", "Argo"),
-        Carro("Honda", "HR-V"))
+        val listaDeLivros = listOf<Livros>(
+            Livros("Harry Potter", "Aventura"),
+        Livros("O Senhor dos Anéis", "Aventura"),
+        Livros("Cinquenta Tons de Cinza", "Sadomasoquismo"))
 
-        listView.setAdapter(ListaAdapter(listaDeCarro, this))
+        listView.setAdapter(ListaAdapter(listaDeLivros, this))
 
     }
 }
