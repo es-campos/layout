@@ -16,14 +16,17 @@ class Main2Activity : AppCompatActivity() {
 //        Livros("O Senhor dos Anéis", "Aventura"),
 //        Livros("Cinquenta Tons de Cinza", "Sadomasoquismo"))
 
-        val dao = Room.databaseBuilder(applicationContext, DataBaseLivro :: class.java, "meudb")
-            .allowMainThreadQueries()
-            .build()
-            .getDao()
+        val buscaTodos = listOf<Livros>(Livros(id = 0, nome = "Nome", genero = "Genero"),
+            Livros (nome = "Emerson", genero = "Dog", id = 1))
 
-        dao.inserir(Livros(0, "Emerson", "Cachorro"))
-
-        val buscaTodos = dao.buscaTodos()
+//        val dao = Room.databaseBuilder(applicationContext, DataBaseLivro :: class.java, "meudb")
+//            .allowMainThreadQueries()
+//            .build()
+//            .getDao()
+//
+//        dao.inserir(Livros(0, "Emerson", "Cachorro"))
+//
+//        val buscaTodos = dao.buscaTodos()
 
         listView.setAdapter(ListaAdapter(buscaTodos, this))
 
